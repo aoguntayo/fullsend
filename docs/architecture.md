@@ -1198,3 +1198,10 @@ Installation is driven entirely by the `fullsend` CLI (`fullsend github setup`,
 `fullsend repos`). This is unrelated to the **public mint** Worker, which is a separate
 deployment provisioned from `internal/dispatch/cf/` and served at `mint.fullsend.sh`
 ([ADR 0068](ADRs/0068-public-community-mint-architecture.md)).
+
+**Decided:**
+
+- Documentation hosting model: documentation URLs redirect to raw GitHub
+  markdown instead of serving VitePress-rendered static assets, eliminating the
+  Cloudflare free-tier 20,000-file ceiling
+  ([ADR 0037](ADRs/0037-redirect-docs-to-raw-github-markdown.md)).
